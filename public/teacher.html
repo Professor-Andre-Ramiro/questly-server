@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="loginView">
+      <h1>Teacher Dashboard</h1>
+      <p class="subtitle">Enter the password to view student questions.</p>
+      <input type="password" id="passwordInput" placeholder="Password">
+      <div>
+        <button id="loginBtn">Log in</button>
+      </div>
+      <div class="message" id="loginMessage"></div>
+    </div>
+
+    <div id="dashboardView" style="display:none;">
+      <div class="top-bar">
+        <h1 style="margin:0;">Student Questions</h1>
+        <button id="logoutBtn">Log out</button>
+      </div>
+      <p class="subtitle">Questions are anonymous and already filtered for length, relevance and tone. Identical questions from different students are merged and counted &mdash; the most-asked ones are shown first and highlighted.</p>
+      <div id="questionList"></div>
+      <p class="empty-state" id="emptyState" style="display:none;">No questions yet.</p>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="teacher.js"></script>
+</body>
+</html>
