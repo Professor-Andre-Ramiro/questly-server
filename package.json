@@ -1,0 +1,12 @@
+{
+  "name": "anon-questions",
+  "version": "1.0.0",
+  "description": "Anonymous student question board with a teacher dashboard and a relevance/quality filter",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
